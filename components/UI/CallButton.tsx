@@ -5,6 +5,7 @@ import { phoneNumber } from '@/lib/variables';
 
 const CallButton: React.FC = () => {
   const handleClick = () => {
+    
     navigator.clipboard.writeText(phoneNumber);
   };
 

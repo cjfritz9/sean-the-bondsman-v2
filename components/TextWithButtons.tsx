@@ -17,10 +17,10 @@ const TextWithButtons: React.FC<TextWithButtonsProps> = ({
   return (
     <div className='flex flex-col gap-12'>
       <div className='select-none text-shadow'>
-        <h1 className='text-6xl text'>{text}</h1>
-        {subtext && <h2 className='text-4xl text-primary'>{subtext}</h2>}
+        <h1 className='lg:text-6xl text-4xl text'>{text}</h1>
+        {subtext && <h2 className='lg:text-4xl text-3xl text-primary'>{subtext}</h2>}
       </div>
-      <div className='flex gap-6 justify-center'>
+      <div className='flex md:gap-6 justify-center'>
         {buttons}
       </div>
     </div>
